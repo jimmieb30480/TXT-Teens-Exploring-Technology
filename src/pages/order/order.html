@@ -1,0 +1,51 @@
+<!--
+  Generated template for the OrderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- margin-left: 174px;margin-top: -7%; -->
+<!-- margin-left: 75%;margin-top: -25px; -->
+
+<!-- margin-bottom: 0px;margin-left: 25%;margin-top: 20px;margin-bottom: 0%; -->
+<!-- margin-left: 85%;margin-top: -11%; -->
+
+<!-- margin-left: 70%;margin-top: -50px; -->
+<!-- margin-left: 85%;margin-top: 0px; -->
+<!-- margin-left: 65%;margin-top: -67px; -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: center;background-color: red;">
+      <b style="color: white;">{{store.name}} Order Page</b>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div style="width: 100%;text-align: center;">
+    <img style="width: 65%;height: 65%;" src="http://frankorourke.squarespace.com/storage/Halal-Food-Truck-by-Emily-Koo.jpg?__SQUARESPACE_CACHEVERSION=1374582641035"/>
+  </div>
+  <div style="width: 100%;text-align: center;">
+    <h1>Gyro's Food Cart</h1>
+  </div>
+  
+  <div *ngFor="let item of items">
+      <div>
+
+        <b><h2 style="margin-top: 0px;">{{item.name}}</h2></b> <div style="margin-left: 82%;margin-top: -40px;margin-bottom: 0px;font-size: 20px;"><b>{{item.price}}</b></div> 
+        
+        <button ion-button round style="background-color: red;color: white;font-size: 20px;width: 10%;height: 10%;margin-left: 25%;margin-top: 20px;margin-bottom: 0%;" (click)="add(item)"><b>+</b></button> 
+        <div style="font-size: 20px;margin-left: 195px;margin-top: -7%;color: black;">{{item.num}}</div>
+        <button ion-button round style="margin-left: 65%;margin-top: -47px;background-color: red;color: white;font-size: 30xp;height: 20px;width: 10%;" (click)="subtract(item)"><b>-</b></button>
+      
+      </div>
+        
+        <p style="margin-top: 10px;">______________________________________________________________</p>
+  </div>
+  <div style="width: 100%;text-align: center;">
+    <p style="font-size: 30px;"><b>Total: ${{price}}</b></p>
+  </div>
+  <button ion-button style="margin-left: 31%;background-color: black;color: white;" (click)="sendSMS()">Submit Order</button>
+</ion-content>
+
