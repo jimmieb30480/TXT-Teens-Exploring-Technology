@@ -5,4 +5,53 @@ page-order {
     .back-button-text {
         color: white !important;
     }
+    .checked {
+        color: #DE0000;
+    }
+
+    .my-btn{
+        background-color: #DE0000;
+        color: white;
+        font-size: 20px;
+        height: 20px;
+        width: 50px;
+        border-radius: 50px;
+    }
+
+    .no-margin{
+        margin: 0 !important;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .p-margin{
+        margin: 5px 0 !important;
+        font-size: 13px;
+        height: 85px;
+    }
+
+    .border-bottom{
+        border-bottom: solid thin black;
+        padding: 15px 0;
+    }
+
+    .buttons{
+        text-align: center;
+
+    }
+
+    .buttons *{
+        vertical-align: middle;
+    }
+
+    .navigate{
+        display: block;
+        width: 200px;
+        height: 55px;
+        margin: auto;
+        background-color: #DE0000;
+        color: white;
+        font-size: 22px;
+
+    }
 }
