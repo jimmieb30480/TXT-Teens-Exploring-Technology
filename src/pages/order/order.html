@@ -25,35 +25,90 @@
 </ion-header>
 
 <ion-content padding>
-  
+
   <!-- <div>
     <img src="https://i.pinimg.com/originals/db/13/1b/db131bcada1423a17bcfa9b960ce6a6c.jpg" style="width: 55%;height: 55%;margin-bottom: 0px;"/>
   </div> -->
-  
-  <div *ngFor="let item of items">
-      <div>
-        <img [src]="item.img" style="width: 160px;height: 120px;margin-bottom: 0px;"/>
+
+  <!-- <div *ngFor="let item of items">
+    <div>
+      <img [src]="item.img" style="width: 160px;height: 120px;margin-bottom: 0px;" />
+    </div>
+
+    <div style="margin-left: 33px;margin-top: 10px;margin-bottom: 0px;">
+      <span [class]="item.rating1"></span>
+      <span [class]="item.rating2"></span>
+      <span [class]="item.rating3"></span>
+      <span [class]="item.rating4"></span>
+      <span [class]="item.rating5"></span>
+    </div>
+
+    <div>
+
+      <div style="margin-left: 69%;margin-top: -160px;margin-bottom: 120px;font-size: 25px;font-family: Sansation;">{{item.price}}</div>
+
+      <div style="font-size: 17px;margin-left: 54%;margin-top: -32%;margin-bottom: -20px;text-align: center;font-family: Sansation;">
+        <p style="color: slategrey;">{{item.desc}}</p>
       </div>
 
-      <div>
+      <button ion-button round style="background-color: #DE0000;color: white;font-size: 20px;width: 10%;height: 10%;margin-left: 55%;margin-top: 27px;margin-bottom: 0%;"
+        (click)="add(item)">
+        <b>+</b>
+      </button>
+      <div style="font-size: 20px;margin-left: 76%;margin-right: 0px;margin-top: -7%;color: black;">{{item.num}}</div>
+      <button ion-button round style="margin-left: 85%;margin-top: -47px;background-color: #DE0000;color: white;font-size: 30xp;height: 20px;width: 10%;"
+        (click)="subtract(item)">
+        <b>-</b>
+      </button>
 
-        <div style="margin-left: 69%;margin-top: -128px;margin-bottom: 120px;font-size: 25px;font-family: Sansation;">{{item.price}}</div>
+    </div>
+  </div> -->
 
-        <div style="font-size: 17px;margin-left: 54%;margin-top: -32%;margin-bottom: -20px;text-align: center;font-family: Sansation;">
-          <p style="color: slategrey;">{{item.desc}}</p>
-        </div>
-        
-        <button ion-button round style="background-color: #DE0000;color: white;font-size: 20px;width: 10%;height: 10%;margin-left: 55%;margin-top: 27px;margin-bottom: 0%;" (click)="add(item)"><b>+</b></button> 
-        <div style="font-size: 20px;margin-left: 76%;margin-right: 0px;margin-top: -7%;color: black;">{{item.num}}</div>
-        <button ion-button round style="margin-left: 85%;margin-top: -47px;background-color: #DE0000;color: white;font-size: 30xp;height: 20px;width: 10%;" (click)="subtract(item)"><b>-</b></button>
-      
-      </div>
-        
-        <p style="margin-top: -20px;">________________________________________________________</p>
+
+  <div *ngFor="let item of items" class="border-bottom">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <img [src]="item.img" style="width: 160px;height: 120px;margin-bottom: 0px;" />
+          </div>
+          <div style="margin-left: 33px;margin-top: 10px;margin-bottom: 0px;">
+            <span [class]="item.rating1"></span>
+            <span [class]="item.rating2"></span>
+            <span [class]="item.rating3"></span>
+            <span [class]="item.rating4"></span>
+            <span [class]="item.rating5"></span>
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <h1 class="no-margin">{{item.price}}</h1>
+          <div style="font-size: 17px">
+              <p style="color: slategrey;" class="p-margin">{{item.desc}}</p>
+          </div>
+          <div class="buttons">
+              <button ion-button class="my-btn" (click)="add(item)">
+              <b>+</b>
+              </button>
+
+              <span style="font-size: 20px;color: black;">{{item.num}}</span>
+
+              <button ion-button class="my-btn" (click)="subtract(item)">
+              <b>-</b>
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+
+
+
+
   <div style="width: 100%;text-align: center;">
-    <p style="font-size: 30px;"><b>Total: ${{price}}</b></p>
+    <p style="font-size: 30px;">
+      <b>Total: ${{price}}</b>
+    </p>
   </div>
-  <button ion-button style="margin-left: 31%;background-color: black;color: white;" (click)="sendSMS()">Submit Order</button>
+  <button ion-button class="navigate" (click)="sendSMS()">Order & Navigate</button>
 </ion-content>
-
