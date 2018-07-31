@@ -42,7 +42,12 @@ export class OrderPage {
       price: '$1.50',
       priceNum: 1.5,
       desc: 'Crisp-fried corn tortillas with seasoned ground beef, onion, and cilantro.',
-      img: "tacos.png"
+      img: "assets/imgs/tacos.jpg",
+      rating1: "fa fa-star checked",
+      rating2: "fa fa-star checked",
+      rating3: "fa fa-star checked",
+      rating4: "fa fa-star checked",
+      rating5: "fa fa-star"
     },
     {
       name: "Burger",
@@ -50,7 +55,12 @@ export class OrderPage {
       price: '$1.50',
       priceNum: 1.5,
       desc: 'This burger is very pleasing to the eyes because it contains a rich sesame bun, juicy meat, melted cheese, and a sweet onion.',
-      img: "https://i.pinimg.com/originals/db/13/1b/db131bcada1423a17bcfa9b960ce6a6c.jpg"
+      img: "assets/imgs/burger.jpg",
+      rating1: "fa fa-star checked",
+      rating2: "fa fa-star checked",
+      rating3: "fa fa-star checked",
+      rating4: "fa fa-star checked",
+      rating5: "fa fa-star checked"
     },
     {
       name: "Hot Dog",
@@ -58,7 +68,12 @@ export class OrderPage {
       price: '$1.50',
       priceNum: 1.5,
       desc: 'Crisp-fried corn tortillas with seasoned ground beef, onion, and cilantro.',
-      img: "https://static1.squarespace.com/static/58e6d735cd0f68e5207ad721/58e710901b10e3b4ed7202ff/58e71090bf629ae56bc4c32a/1491538075014/FullSizeRender+2.jpg"
+      img: "assets/imgs/hotdog.jpg",
+      rating1: "fa fa-star checked",
+      rating2: "fa fa-star checked",
+      rating3: "fa fa-star checked",
+      rating4: "fa fa-star checked",
+      rating5: "fa fa-star"
     },
     {
       name: "Corn",
@@ -66,7 +81,12 @@ export class OrderPage {
       price: '$1.50',
       priceNum: 1.5,
       desc: 'This corn is a classic in Mexico because it contains all these delicious ingredients, such as',
-      img: "http://onbetterliving.com/wp-content/uploads/2015/09/Mexican-Street-Vendor-Corn-Recipe.jpg"
+      img: "assets/imgs/corn.jpg",
+      rating1: "fa fa-star checked",
+      rating2: "fa fa-star checked",
+      rating3: "fa fa-star checked",
+      rating4: "fa fa-star",
+      rating5: "fa fa-star"
     },
   ]
   public price = 0;
@@ -116,6 +136,11 @@ export class OrderPage {
 
   }
 }
+// http://jeremykerley.com/wp-content/uploads/2016/07/tacos.jpg
+// https://aht.seriouseats.com/images/2012/04/20120427-bk-japan-ringo-burger-product-shot.jpg
+// https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQxrXkD7nWqMj2WKOR26-kCvwibjdEiMKSS_K7Zg121ZWCAGHI
+// https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqi_-aQF61Pw97t4SgG6LpPMRJmQXpxgUtkmU-w00JmryRpYMl
 
 
 // https://www.fluentu.com/blog/spanish/wp-content/uploads/sites/2/2017/11/how-to-order-food-in-mexican-spanish-e1511867184148.jpg
+// https://files.slack.com/files-pri/T17R4TFAM-FBZHTGC67/tacos.png
