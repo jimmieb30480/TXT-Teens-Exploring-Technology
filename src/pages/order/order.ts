@@ -17,7 +17,7 @@ export class OrderPage {
   public stores = [
     {
       position: {lat:34.022284, lng:-118.291808},
-      name: "Gyro's Cart",
+      name: "Gyro's Food Cart",
       phone: '121330009188',
       address: '1117 w 99th St',
       id: 'taco-bell',
@@ -40,31 +40,33 @@ export class OrderPage {
       name: "Taco",
       num: 0,
       price: '$1.50',
-      priceNum: 1.5
+      priceNum: 1.5,
+      desc: 'Crisp-fried corn tortillas with seasoned ground beef, onion, and cilantro.',
+      img: "tacos.png"
     },
     {
       name: "Burger",
       num: 0,
       price: '$1.50',
-      priceNum: 3
+      priceNum: 1.5,
+      desc: 'This burger is very pleasing to the eyes because it contains a rich sesame bun, juicy meat, melted cheese, and a sweet onion.',
+      img: "https://i.pinimg.com/originals/db/13/1b/db131bcada1423a17bcfa9b960ce6a6c.jpg"
     },
     {
       name: "Hot Dog",
       num: 0,
       price: '$1.50',
-      priceNum: 1.5
-    },
-    {
-      name: "Snacks",
-      num: 0,
-      price: '$1.50',
-      priceNum: 1.5
+      priceNum: 1.5,
+      desc: 'Crisp-fried corn tortillas with seasoned ground beef, onion, and cilantro.',
+      img: "https://static1.squarespace.com/static/58e6d735cd0f68e5207ad721/58e710901b10e3b4ed7202ff/58e71090bf629ae56bc4c32a/1491538075014/FullSizeRender+2.jpg"
     },
     {
       name: "Corn",
       num: 0,
       price: '$1.50',
-      priceNum: 1.5
+      priceNum: 1.5,
+      desc: 'This corn is a classic in Mexico because it contains all these delicious ingredients, such as',
+      img: "http://onbetterliving.com/wp-content/uploads/2015/09/Mexican-Street-Vendor-Corn-Recipe.jpg"
     },
   ]
   public price = 0;
@@ -114,3 +116,6 @@ export class OrderPage {
 
   }
 }
+
+
+// https://www.fluentu.com/blog/spanish/wp-content/uploads/sites/2/2017/11/how-to-order-food-in-mexican-spanish-e1511867184148.jpg

@@ -45,11 +45,17 @@ export class HomePage {
       {
         position: {lat:34.022284, lng:-118.291808},
         name: "Gyro's Food Cart",
-        phone: '424-309-2410',
+        phone: '(424) 309-2410',
         address: '1117 w 99th St',
         id: 'taco-bell',
-        destination: [34.022284,-118.291808]
-
+        destination: [34.022284,-118.291808],
+        icon: {
+          url: 'assets/cart.png',
+          size: {
+            width: 40,
+            height: 40
+          }
+        }
       },
       {
         position: {lat:34.033136, lng: -118.249739},
@@ -57,7 +63,14 @@ export class HomePage {
         phone: '121330009188',
         address: '1117 w 99th St',
         id: 'state-bell',
-        destination: [34.033136,-118.249739]
+        destination: [34.033136,-118.249739],
+        icon: {
+          url: 'assets/cart.png',
+          size: {
+            width: 40,
+            height: 40
+          }
+        }
 
       }
     ];
@@ -81,6 +94,7 @@ export class HomePage {
     this.map = GoogleMaps.create('map_canvas', mapOptions);
 
     POINTS.forEach((data: any) => {
+      console.log('adding markers')
       console.log(data);
       data.disableAutoPan = true;
       let marker: Marker = this.map.addMarkerSync(data);

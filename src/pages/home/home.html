@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title style="background-color: red;">
+    <ion-title style="background-color: #DE0000;">
       <h1 style="color: white;">Home</h1>
     </ion-title>
   </ion-navbar>
@@ -10,18 +10,19 @@
   <div id="info-window" *ngIf="infoWindowFlag">
     <div id="close" (click)="close()">
         <i class="fas fa-chevron-down"></i>
-
     </div>
-    <div style="width: 100%;text-align: center;font-size: 40px;">
+    <img src="https://f.ptcdn.info/469/049/000/olvzdqnn9eyjmBNmwK5-o.jpg" style="width: 30%;height: 30%;border-radius: 45%;margin-top: 5%;"/>
+    <div style="margin-left: 30%;margin-top: -95px;text-align: center;">
       <h1>{{currentMarker.name}}</h1>
       <h3>{{currentMarker.phone}}</h3>
     </div>
-    <div style="width: 100%;text-align: center;font-size: 30px;">
+    <p>_____________________________________________________________</p>
+    <div style="width: 100%;text-align: center;font-size: 25px;margin-top: 30px;">
       <p>{{currentMarker.address}}</p>
     </div>
     <div style="width: 100%;text-align: center;">
-      <button style="padding: 10px 10px;font-size: 20px;background-color: black;color: white;" (click)="order(currentMarker.id)">Order</button>
-      <button style="padding: 10px 10px;font-size: 20px;background-color: black;color: white;" (click)="navigate(currentMarker.destination)">Navigation</button>
+      <button style="height: 6%;padding: 10px 10px;font-size: 20px;background-color: #DE0000;color: white;" (click)="order(currentMarker.id)">Order</button>
+      <button style="height: 6%;padding: 10px 10px;font-size: 20px;background-color: #DE0000;color: white;" (click)="navigate(currentMarker.destination)">Navigation</button>
     </div>
   </div>
 

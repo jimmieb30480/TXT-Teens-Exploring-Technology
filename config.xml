@@ -81,7 +81,9 @@
     <allow-navigation href="http://169.254.98.107:8100" />
     <allow-navigation href="http://169.254.185.98:8100" />
     <allow-navigation href="http://169.254.129.206:8100" />
-    <engine name="ios" spec="^4.5.4" />
+    <allow-navigation href="http://10.27.24.162:8100" />
+    <allow-navigation href="http://169.254.245.57:8100" />
+    <engine name="ios" spec="^4.5.5" />
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-googlemaps" spec="^2.3.8">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyByMpwhopt3ofVUTro7TfzipPpUocQn8xs" />
